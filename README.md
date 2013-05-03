@@ -9,10 +9,19 @@ Simple ray tracer in C
 
 In both projects you can configure the raytracer with the .cfg file.
 
+Tested on Mac OS X and Ubuntu Linux, to swap between platforms you should check this lines in main.c:
+
+	//OS X
+	#include <GLUT/glut.h>
+	//LINUX
+	//#include <GL/glut.h>
+
+The code is highly commented so you can understand where i mess everything up.
+
 Compiling
 ---------
-$ make
+	$ make
 
 Running
 -------
-$ ./bin/raytracer raytracer.cfg
+	$ ./bin/raytracer raytracer.cfg
